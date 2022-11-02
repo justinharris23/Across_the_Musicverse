@@ -6,13 +6,13 @@
 
 ## Description
 
-Across the Musicverse is your one-stop shop to learn about your favorite heroes and villains from the television show Breaking Bad. Using the Breaking Bad API (https://breakingbadapi.com/documentation), learn about over 60 characters. From Walter White to baby Holly.
+Across the Musicverse is a music site pulling in data using the Deezer API and built on the React framework. 
 
 ## How to Get Started
 
-- Type in your favorite characters name and click the Search button or click the "enter" button your keyboard.
+- There will be various ways to find an artist, album, or track
 - An image and information of the character will be displayed
-- Clicking the Randomize button without any character name in the search area will return a random character
+
 
 ## Character Statistics
 
@@ -28,28 +28,20 @@ Here is the list of character information that will be displayed. The image will
 
 ![image](https://i.imgur.com/uwteaEk.png)
 
-Link - https://wireframe.cc/pro/edit/590959
+Link - 
 
 ### Trello Board
 
-Link - https://trello.com/b/PKqBziKS/project-1-heroes-and-villains
+Link - 
 
 ## Post-MVP Ideas
 
-- Add a customer cursor
-- Add a More Characters area
-- Make the More Characters buttons and have them clickable
-- Make a button to change the background image
-- Create a full on dark mode that changes more elements of the css
-- Pull in a quote from each character, the API, had this setup differently than the main character one, so we'd have to connect them somehow
-- Make the images do more when hover over them
-- Pull in a tv show clips from another API
-- Intro animation with Breaking Bad sounds/audio
+- Add Deezer's music player that plays 30 sec clips of each track
+- Pull in Related Artists
+- Clicking the Randomize button without anything in the search area will return a random artist (or album or track)
+
 
 ## Sources
 
-- https://breakingbadapi.com/documentation
-- https://getcssscan.com/css-buttons-examples
-- https://css-tricks.com/snippets/css/a-guide-to-flexbox/
-- https://www.w3schools.com/css/css_link.asp
-- https://www.amazon.com/Heisenberg-Vinyl-Sticker-Bumper-Window/dp/B06VTW8735
+- https://developers.deezer.com/api
+

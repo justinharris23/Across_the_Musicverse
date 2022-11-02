@@ -1,6 +1,6 @@
 # Project 2 - Across the Musicverse
 
-![image](https://variety.com/wp-content/uploads/2022/07/Music-Streaming-Wars.jpg?w=681&h=383&crop=1)
+![image](https://i.ibb.co/0GQp8jf/Music-Streaming-Wars.webp)
 
 ## Project Title: Heroes and Villains
 

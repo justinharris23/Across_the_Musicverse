@@ -6,21 +6,20 @@
 
 ## Description
 
-Across the Musicverse is a music site pulling in data using the Deezer API and built on the React framework. 
+Across the Musicverse is a music site pulling in data using the Deezer API and built on the React framework. This site will allow you see your favorite artists albums and tracks. See the top tracks, albums, artists from around the globe. In addition, you can hear 30 sec clips of songs. 
 
 ## How to Get Started
 
-- There will be various ways to find an artist, album, or track
 - Search will allow you to search artist, album, or track
-- There will image/buttons for Artist, Album, or Track. When clicked this will take you a new page where the Top 10 (or more) streamed Artist, Album, or Track, will be displayed
+- There will be an area featuring the Top Artist, Top Albums, and Top Tracks from around the world. 
 - Click an Artist will take you to a page where you can view the Artists image, along with their Albums and Tracks. 
 - Clicking an Album will take you to the albums page where you can view the list of tracks on that particular album
-- (A a stretch goal is to pull in Playlists and also allow tracks to be playable)
+- (A stretch goal is to pull in Playlists and also allow tracks to be playable)
 
 
-## React Components
+## Technology Used
 
-There will be a minimum of 4 components. Possibly more (see strectch goals).
+This site will be built in React using Reach components and routers. Javascript and CSS will also be implemented. There will be a minimum of 4 components. Possibly more (see strectch goals).
 
 - App.js
 - Artists.jsx
@@ -30,7 +29,7 @@ There will be a minimum of 4 components. Possibly more (see strectch goals).
 - Playlists.jsx (stretch goal)
 - Genres.jsx (stretch goal)
 
-### Wireframes
+### Wireframes and Component Hierarchy 
 
 ![image](https://i.imgur.com/uwteaEk.png)
 
@@ -38,7 +37,7 @@ Link -
 
 ### Trello Board
 
-Link - 
+Link - https://trello.com/b/JQovLf19/across-the-musicverse
 
 ## Post-MVP Ideas
 

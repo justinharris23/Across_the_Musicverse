@@ -2,11 +2,11 @@
 
 ![image](https://i.ibb.co/0GQp8jf/Music-Streaming-Wars.webp)
 
-## Project Title: Heroes and Villains
+## Project Title: Across the Musicverse
 
 ## Description
 
-Heroes and Villains is your one-stop shop to learn about your favorite heroes and villains from the television show Breaking Bad. Using the Breaking Bad API (https://breakingbadapi.com/documentation), learn about over 60 characters. From Walter White to baby Holly.
+Across the Musicverse is your one-stop shop to learn about your favorite heroes and villains from the television show Breaking Bad. Using the Breaking Bad API (https://breakingbadapi.com/documentation), learn about over 60 characters. From Walter White to baby Holly.
 
 ## How to Get Started
 

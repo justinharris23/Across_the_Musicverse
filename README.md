@@ -11,18 +11,24 @@ Across the Musicverse is a music site pulling in data using the Deezer API and b
 ## How to Get Started
 
 - There will be various ways to find an artist, album, or track
-- An image and information of the character will be displayed
+- Search will allow you to search artist, album, or track
+- There will image/buttons for Artist, Album, or Track. When clicked this will take you a new page where the Top 10 (or more) streamed Artist, Album, or Track, will be displayed
+- Click an Artist will take you to a page where you can view the Artists image, along with their Albums and Tracks. 
+- Clicking an Album will take you to the albums page where you can view the list of tracks on that particular album
+- (A a stretch goal is to pull in Playlists and also allow tracks to be playable)
 
 
-## Character Statistics
+## React Components
 
-Here is the list of character information that will be displayed. The image will appear on the top side, all other information will appear under the image.
+There will be a minimum of 4 components. Possibly more (see strectch goals).
 
-- Image
-- Birthdate
-- Nickname
-- Occupation
-- Portrayed By
+- App.js
+- Artists.jsx
+- Albums.jsx
+- Tracks.jsx
+- Charts.jsx (this allows the top streaming info to be displayed)
+- Playlists.jsx (stretch goal)
+- Genres.jsx (stretch goal)
 
 ### Wireframes
 

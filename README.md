@@ -6,7 +6,7 @@
 
 ## Description
 
-Across the Musicverse is a music site pulling in data using the Deezer API and built on the React framework. This site will allow you see your favorite artists albums and tracks. See the top tracks, albums, artists from around the world. In addition, you can hear 30 sec clips of songs. 
+Across the Musicverse is a music site pulling in data using the Deezer API (https://developers.deezer.com/api) and built on the React framework. This site will allow you see your favorite artists albums and tracks. See the top tracks, albums, artists from around the world. In addition, you can hear 30 sec clips of songs. 
 
 ## How to Get Started
 

@@ -1,11 +1,9 @@
 import React from "react";
 
-function Home(props) {
+export default function Home() {
   return (
     <div>
-      <h2>Welcome to my page</h2>
+      <h2>Home</h2>
     </div>
   );
 }
-
-export default Home;

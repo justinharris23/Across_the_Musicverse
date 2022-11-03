@@ -14,26 +14,33 @@ Across the Musicverse is a music site pulling in data using the Deezer API and b
 - There will be an area featuring the Top Artist, Top Albums, and Top Tracks from around the world. 
 - Click an Artist will take you to a page where you can view the Artists image, along with their Albums and Tracks. 
 - Clicking an Album will take you to the albums page where you can view the list of tracks on that particular album
-- (A stretch goal is to pull in Playlists and also allow tracks to be playable)
+- Stretch Goal: Click a track and a 30 sec clip of that track will play
 
 
 ## Technology Used
 
 This site will be built in React using Reach components and routers. Javascript and CSS will also be implemented. There will be a minimum of 4 components. Possibly more (see strectch goals).
 
+## Components
 - App.js
+- Header.jsx
+- Main.jsx
 - Artists.jsx
 - Albums.jsx
 - Tracks.jsx
-- Charts.jsx (this allows the top streaming info to be displayed)
+- Charts.jsx (this allows the top streaming info to be displayed - Top Artists, Albums, Tracks)
 - Playlists.jsx (stretch goal)
 - Genres.jsx (stretch goal)
+- Playable Tracks (stretch goal)
 
-### Wireframes and Component Hierarchy 
+### Wireframes
 
-![image](https://i.imgur.com/uwteaEk.png)
+![image](https://i.imgur.com/7W5tSyR.png)
 
-Link - 
+Link - https://www.figma.com/file/n549tARxgRVOtPRCmoLw4j/Project-2?node-id=0%3A1
+
+## Code Snippet Image
+![image](https://i.imgur.com/aeepKMT.png)
 
 ### Trello Board
 

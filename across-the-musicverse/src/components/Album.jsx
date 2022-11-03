@@ -1,42 +1,39 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 
-export default function Artist() {
+export default function Album() {
   //we need to create a state for our data
-  const [artist, setArtist] = useState([]);
+  const [album, setAlbum] = useState([]);
 
   //we need to call an axios function
   useEffect(() => {
-    const getArtist = async () => {
-      const response = await axios.get(
-        "https://api.deezer.com/search?q=the%20beatles"
-      );
+    const getAlbum = async () => {
+      const response = await axios.get("https://api.deezer.com/album/302127");
 
       //we need to set state of our data
-      setArtist(response.data.data);
+      setAlbum(response.data.data);
     };
 
-    getArtist();
+    getAlbum();
   }, []);
 
   //we need to see the data
-  console.log(artist);
+  console.log(album);
   // console.log(artist[0].title);
 
   //let's also make a guard operator
   //so if data takes a few seconds/
   //our site doesn't break
 
-  if (!artist) {
+  if (!album) {
     return <h2>Loading please wait</h2>;
   } else {
     //we have to map all 25 of our songs here in this div. If we don't have an artist we'll get Loading Please Wait
     return (
       <div className="grid">
-        {artist.map((artist) => (
-          <div key={artist.name} className="card">
-            <h3>Album Name: {artist.name} </h3>
-            <h3>Song Title: {artist.title} </h3>
+        {album.map((album) => (
+          <div key={album.name} className="card">
+            <h3>Album Name: {album.title} </h3>
           </div>
         ))}
       </div>

@@ -2,11 +2,23 @@ import { Link } from "react-router-dom";
 
 export default function Nav(props) {
   return (
-    <div>
-      <Link to="/"> Home </Link>
-      <Link to="/artist"> Artist </Link>
-      <Link to="/album"> Album </Link>
-      <Link to="/search"> Search </Link>
+    <div className="nav">
+      <Link to="/">
+        {" "}
+        <h2>Home</h2>{" "}
+      </Link>
+      <Link to="/artist">
+        {" "}
+        <h2>Top Artists</h2>{" "}
+      </Link>
+      <Link to="/album">
+        {" "}
+        <h2>Top Albums</h2>{" "}
+      </Link>
+      <Link to="/search">
+        {" "}
+        <h2>Search</h2>{" "}
+      </Link>
     </div>
   );
 }

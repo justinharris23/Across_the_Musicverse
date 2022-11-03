@@ -11,7 +11,7 @@ export default function Artist() {
       const response = await axios.get(
         "https://api.deezer.com/search?q=the%20beatles"
       );
-
+      console.log(response.data.data);
       //we need to set state of our data
       setArtist(response.data.data);
     };
@@ -22,7 +22,6 @@ export default function Artist() {
   //we need to see the data
   console.log(artist);
   // console.log(artist[0].title);
-
   //let's also make a guard operator
   //so if data takes a few seconds/
   //our site doesn't break
@@ -33,10 +32,10 @@ export default function Artist() {
     //we have to map all 25 of our songs here in this div. If we don't have an artist we'll get Loading Please Wait
     return (
       <div className="grid">
-        {artist.map((artist) => (
-          <div key={artist.name} className="card">
-            <h3>Album Name: {artist.name} </h3>
-            <h3>Song Title: {artist.title} </h3>
+        {artist.map((data) => (
+          <div key={data.name} className="card">
+            <h3>Album Name: {data.album.title} </h3>
+            <h3>Song Title: {data.title} </h3>
           </div>
         ))}
       </div>

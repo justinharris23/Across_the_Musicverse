@@ -1,6 +1,6 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
-function App() {
+function Search() {
   //Initial State. This is an object. Form will have 3 key value pairs, each a blank string
   const initialState = {
     issueType: "",
@@ -18,6 +18,11 @@ function App() {
   const handleChange = (event) => {
     setFormState({ ...formState, [event.target.id]: event.target.value });
   };
+
+  //Call to API to intiate search goes here
+  //How to change variable in the API call
+  //use State with a handlechange and a handlesubmit function
+  //like in the React forms lesson
 
   return (
     <div className="App">
@@ -57,4 +62,4 @@ function App() {
   );
 }
 
-export default App;
+export default Search;

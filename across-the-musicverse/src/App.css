@@ -19,5 +19,20 @@ justify-content: center;
 
 img {
   border: 2px solid black;
+  border-radius: 10%; 
+}
+
+/* .artistImage {
+  border: 2px solid black;
   border-radius: 50%; 
 }
+
+.albumImage {
+  border: 2px solid black;
+  border-radius: 10%; 
+}
+
+.trackImage {
+  border: 1px solid black;
+  border-radius: 50%; 
+} */

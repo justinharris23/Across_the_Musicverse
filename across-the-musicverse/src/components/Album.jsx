@@ -31,10 +31,11 @@ export default function Album() {
   } else {
     //we have to map all 25 of our songs here in this div. If we don't have an artist we'll get Loading Please Wait
     return (
-      <div className="grid">
+      <div className="topAlbum">
+        <h1>Most Streamed Albums</h1>
         {chart.map((data) => (
           <div key={data.name} className="card">
-            <h3>Album: {data.name} </h3>
+            <h3>Album: {data.title} </h3>
             <h3>Artist: {data.artist.name} </h3>
             <div className="top">
               <img src={data.cover_big} />

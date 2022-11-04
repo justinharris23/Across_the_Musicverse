@@ -34,6 +34,7 @@ export default function Track() {
       <div className="grid">
         {chart.map((data) => (
           <div key={data.name} className="card">
+            <h1>Most Streamed Tracks</h1>
             <h3>Song: {data.title} </h3>
             <h3>Preview Song: {data.preview} </h3>
 
@@ -41,7 +42,7 @@ export default function Track() {
   <source src="horse.mp3" type="audio/mpeg">
 </audio> */}
 
-            <div className="top">
+            <div className="trackImage">
               <img src={data.artist.picture_big} />
             </div>
           </div>

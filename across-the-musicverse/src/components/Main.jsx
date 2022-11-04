@@ -3,6 +3,7 @@ import Home from "./Home";
 import Artist from "./Artist";
 import Album from "./Album";
 import Track from "./Track";
+import Search from "./Search";
 
 export default function Main() {
   return (
@@ -15,6 +16,7 @@ export default function Main() {
         <Route path="/artist" element={<Artist />} />
         <Route path="/album" element={<Album />} />
         <Route path="/track" element={<Track />} />
+        <Route path="/search" element={<Search />} />
       </Routes>
     </div>
   );

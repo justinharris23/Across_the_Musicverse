@@ -39,7 +39,10 @@ export default function Track() {
             <h3>Preview Song:</h3>
 
             {/* Audio Player will allow tracks playble on press to the play button  */}
-            <ReactAudioPlayer src={data.preview} onPlay controls />
+            <div id="audio-player-container">
+              <ReactAudioPlayer src={data.preview} onPlay controls />
+              <button id="play-icon"></button>
+            </div>
 
             <div className="trackImage">
               <img src={data.artist.picture_medium} />

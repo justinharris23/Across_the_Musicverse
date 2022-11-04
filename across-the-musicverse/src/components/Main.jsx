@@ -17,6 +17,12 @@ export default function Main() {
 
         <Route path="/search" element={<Search />} />
       </Routes>
+      {/* <Route
+          exact
+          path="/Artist/:name"
+          element={<ArtistDetails artist={artist} />}
+        />
+      </Routes> */}
     </div>
   );
 }

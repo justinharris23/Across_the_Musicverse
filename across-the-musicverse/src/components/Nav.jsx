@@ -15,9 +15,9 @@ export default function Nav(props) {
         {" "}
         <h2>Top Albums</h2>{" "}
       </Link>
-      <Link to="/search">
+      <Link to="/track">
         {" "}
-        <h2>Search</h2>{" "}
+        <h2>Top Tracks</h2>{" "}
       </Link>
     </div>
   );

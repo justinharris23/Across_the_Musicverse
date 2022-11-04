@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 
-export default function Album() {
+export default function Track() {
   //we need to create a state for our data
   const [chart, setChart] = useState(null);
 
@@ -12,7 +12,7 @@ export default function Album() {
       console.log(response.data);
 
       //we need to set state of our data
-      setChart(response.data.albums.data);
+      setChart(response.data.tracks.data);
     };
 
     getChart();
@@ -34,10 +34,15 @@ export default function Album() {
       <div className="grid">
         {chart.map((data) => (
           <div key={data.name} className="card">
-            <h3>Album: {data.name} </h3>
-            <h3>Artist: {data.artist.name} </h3>
+            <h3>Song: {data.title} </h3>
+            <h3>Preview Song: {data.preview} </h3>
+
+            {/* <audio controls>
+  <source src="horse.mp3" type="audio/mpeg">
+</audio> */}
+
             <div className="top">
-              <img src={data.cover_big} />
+              <img src={data.artist.picture_big} />
             </div>
           </div>
         ))}

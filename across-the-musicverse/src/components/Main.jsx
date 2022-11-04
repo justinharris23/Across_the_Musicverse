@@ -2,7 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import Home from "./Home";
 import Artist from "./Artist";
 import Album from "./Album";
-import Search from "./Search2";
+import Track from "./Track";
 
 export default function Main() {
   return (
@@ -14,7 +14,7 @@ export default function Main() {
         <Route path="/" element={<Home />} />
         <Route path="/artist" element={<Artist />} />
         <Route path="/album" element={<Album />} />
-        {/* <Route path="/search" element={<Search />} /> */}
+        <Route path="/track" element={<Track />} />
       </Routes>
     </div>
   );

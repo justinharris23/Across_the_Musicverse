@@ -13,8 +13,10 @@ display: flex;
 justify-content: center;
 }
 
-.top {
-  border: 2px;
+.topMusic {
+  display: flex;
+  justify-content: space-evenly;
+  /* flex-direction: column; */
 }
 
 img {
@@ -36,3 +38,29 @@ img {
   border: 1px solid black;
   border-radius: 50%; 
 } */
+
+
+input,
+button {
+  color: black;
+  font-family: Nunito;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background-color: transparent;
+}
+
+input[type="text"] {
+  width: 80%;
+  height: 96px;
+  font-size: 60px;
+  line-height: 1;
+}
+
+button {
+  position: relative;
+  display: block;
+  width: 84px;
+  height: 96px;
+  cursor: pointer;
+}

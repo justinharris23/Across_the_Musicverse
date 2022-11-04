@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
+import ReactAudioPlayer from "react-audio-player";
 
 export default function Track() {
   //we need to create a state for our data
@@ -34,16 +35,14 @@ export default function Track() {
       <div className="grid">
         {chart.map((data) => (
           <div key={data.name} className="card">
-            <h1>Most Streamed Tracks</h1>
             <h3>Song: {data.title} </h3>
-            <h3>Preview Song: {data.preview} </h3>
+            <h3>Preview Song:</h3>
 
-            {/* <audio controls>
-  <source src="horse.mp3" type="audio/mpeg">
-</audio> */}
+            {/* Audio Player will allow tracks playble on press to the play button  */}
+            <ReactAudioPlayer src={data.preview} onPlay controls />
 
             <div className="trackImage">
-              <img src={data.artist.picture_big} />
+              <img src={data.artist.picture_medium} />
             </div>
           </div>
         ))}

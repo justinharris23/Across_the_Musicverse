@@ -8,14 +8,13 @@ import Search from "./Search";
 export default function Main() {
   return (
     <div>
-      <div>
-        <h1>header image goes here</h1>
-      </div>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/artist" element={<Artist />} />
-        <Route path="/album" element={<Album />} />
-        <Route path="/track" element={<Track />} />
+
+        {/* <Route path="/artist" element={<Artist />} />
+    <Route path="/album" element={<Album />} /> */}
+        {/* <Route path="/track" element={<Track />} /> */}
+
         <Route path="/search" element={<Search />} />
       </Routes>
     </div>

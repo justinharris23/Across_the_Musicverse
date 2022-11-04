@@ -7,7 +7,7 @@ export default function Nav(props) {
         {" "}
         <h2>Home</h2>{" "}
       </Link>
-      <Link to="/artist">
+      {/* <Link to="/artist">
         {" "}
         <h2>Top Artists</h2>{" "}
       </Link>
@@ -18,7 +18,7 @@ export default function Nav(props) {
       <Link to="/track">
         {" "}
         <h2>Top Tracks</h2>{" "}
-      </Link>
+      </Link> */}
       <Link to="/search">
         {" "}
         <h2>Search</h2>{" "}

@@ -34,10 +34,9 @@ export default function Artist() {
       <div className="grid">
         {chart.map((data) => (
           <div key={data.name} className="card">
-            <h1>Most Streamed Artists</h1>
             <h3>Artist: {data.name} </h3>
             <div className="artistImage">
-              <img src={data.picture_big} />
+              <img src={data.picture_medium} />
             </div>
           </div>
         ))}

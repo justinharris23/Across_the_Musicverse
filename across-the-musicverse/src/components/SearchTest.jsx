@@ -6,6 +6,7 @@ function Search() {
   //Initial State. This is an object. Form will have 3 key value pairs, each a blank string
 
   const [formState, setFormState] = useState("");
+  const [search, setSearch] = useState(null);
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -17,14 +18,20 @@ function Search() {
     console.log(formState);
   };
 
-  const getSearch = async () => {
-    // e.preventDefault();
-    console.log(formState);
-    const response = await axios.get(
-      `https://api.deezer.com/search?q=${formState[""]}`
-    );
-    console.log(response);
-  };
+  useEffect(() => {
+    const getSearch = async () => {
+      // e.preventDefault();
+      console.log(formState);
+      const response = await axios.get(
+        `https://api.deezer.com/search?q=${formState[""]}`
+      );
+      console.log(response.data.data);
+      setSearch(response.data.tracks.data);
+    };
+
+    getSearch();
+  }, []);
+
   //we need to set state of our data
 
   //Call to API to intiate search goes here
@@ -41,15 +48,23 @@ function Search() {
           value={formState.subject}
           onChange={handleChange}
         />
-        <button>
-          <input
-            type="button"
-            onClick={getSearch}
-            id="searchButton"
-            value="Click here"
-          />
-        </button>
+        <input
+          type="button"
+          onClick={getSearch}
+          id="searchButton"
+          value="Click here"
+        />
       </form>
+      <div className="grid">
+        {search.map((data) => (
+          <div key={data.name} className="card">
+            <h3>Artist: {data.name} </h3>
+            <div className="artistImage">
+              <img src={data.picture_medium} />
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

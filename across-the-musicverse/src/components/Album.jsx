@@ -1,9 +1,18 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 export default function Album() {
   //we need to create a state for our data
   const [chart, setChart] = useState(null);
+  let navigate = useNavigate();
+
+  let { i } = useParams();
+
+  const showAlbum = (album, i) => {
+    navigate(`${album.name}`);
+  };
 
   //we need to call an axios function
   useEffect(() => {
@@ -33,7 +42,11 @@ export default function Album() {
     return (
       <div className="topAlbum">
         {chart.map((data) => (
-          <div key={data.name} className="card">
+          <div
+            key={data.name}
+            className="card"
+            onClick={() => showAlbum(data, i)}
+          >
             <h3>Album: {data.title} </h3>
             <h3>Artist: {data.artist.name} </h3>
             <div className="albumImage">

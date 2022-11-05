@@ -4,9 +4,18 @@ import Nav from "./Nav";
 export default function Header() {
   return (
     <div>
-      {/* <Search /> */}
-      <h2>Across the Musicverse</h2>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap"
+        rel="stylesheet"
+      />
+      <h2 className="Main">Across the Musicverse</h2>
       <Nav />
+      <img
+        src="across-the-musicverse/assets/music-header-int.jpg"
+        alt="musicverse"
+      />
     </div>
   );
 }

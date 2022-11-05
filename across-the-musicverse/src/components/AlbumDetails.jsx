@@ -19,7 +19,7 @@ function AlbumDetails(props) {
       <h2>{album.manufacturer}</h2>
     </div>
   ) : (
-    <h1> ship not found</h1>
+    <h1> album not found</h1>
   );
 }
 

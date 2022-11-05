@@ -1,5 +1,12 @@
 .App {
   text-align: center;
+    /* background-image: linear-gradient(to bottom right, rgb(74, 83, 80), white); */
+
+}
+
+h2 {
+  font-family: 'Bungee Spice', cursive;
+  font-size: 30px;
 }
 
 .nav {

@@ -43,7 +43,6 @@ export default function Track() {
             {/* Audio Player will allow tracks playble on press to the play button  */}
             <div id="audio-player-container">
               <ReactAudioPlayer src={data.preview} onPlay controls />
-              <button id="play-icon"></button>
             </div>
 
             <div className>

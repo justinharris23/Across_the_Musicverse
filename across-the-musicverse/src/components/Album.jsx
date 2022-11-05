@@ -10,8 +10,8 @@ export default function Album() {
 
   let { i } = useParams();
 
-  const showAlbum = (album, i) => {
-    navigate(`${album.id}`);
+  const showAlbum = (album) => {
+    navigate(`album/${album.id}`);
   };
 
   //we need to call an axios function
@@ -42,11 +42,7 @@ export default function Album() {
     return (
       <div className="topAlbum">
         {chart.map((data) => (
-          <div
-            key={data.name}
-            className="card"
-            onClick={() => showAlbum(data, i)}
-          >
+          <div key={data.name} className="card" onClick={() => showAlbum(data)}>
             <h3>Album: {data.title} </h3>
             <h3>Artist: {data.artist.name} </h3>
             <div className="albumImage">

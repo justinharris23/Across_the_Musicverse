@@ -1,14 +1,15 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
-function AlbumDetails(props) {
+function AlbumDetails({ chart }) {
   let { id } = useParams();
 
   const [album, setAlbum] = useState(null);
+  console.log(chart);
 
   useEffect(() => {
-    let selectedAlbum = props.albums.find((album) => album.id === id);
-
+    let selectedAlbum = chart?.find((album) => album.id === id);
+    console.log(selectedAlbum);
     setAlbum(selectedAlbum);
   }, []);
 

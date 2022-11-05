@@ -36,7 +36,7 @@ function Search() {
   //like in the React forms lesson
 
   return (
-    <div className="Search">
+    <div className="search">
       <form id="input" onSubmit={handleSubmit}>
         <input
           type="text"
@@ -44,7 +44,7 @@ function Search() {
           value={formState.subject}
           onChange={handleChange}
         />
-        <button>
+        <button className="searchButton">
           <input
             type="button"
             onClick={getSearch}

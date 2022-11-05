@@ -9,16 +9,16 @@ import Search from "./Search";
 import AlbumDetails from "./AlbumDetails";
 
 export default function Main() {
-  const [album, setAlbum] = useState(null);
+  const [chart, setChart] = useState(null);
 
   useEffect(() => {
-    const getAlbum = async () => {
+    const getChart = async () => {
       const response = await axios.get("https://api.deezer.com/chart");
-      console.log(response.data.results);
-      setAlbum(response.data.results);
+      console.log(response.data.albums.data);
+      setChart(response.data.albums.data);
     };
 
-    getAlbum();
+    getChart();
   }, []);
 
   return (
@@ -32,7 +32,7 @@ export default function Main() {
         <Route
           exact
           path="/album/:id"
-          element={<AlbumDetails album={album} />}
+          element={<AlbumDetails chart={chart} />}
         />
       </Routes>
     </div>

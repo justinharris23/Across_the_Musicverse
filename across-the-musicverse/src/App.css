@@ -24,12 +24,12 @@ img {
   border-radius: 10%; 
 }
 
-/* .artistImage {
+.artistImage {
   border: 2px solid black;
   border-radius: 50%; 
 }
 
-.albumImage {
+/* .albumImage {
   border: 2px solid black;
   border-radius: 10%; 
 }
@@ -37,7 +37,7 @@ img {
 .trackImage {
   border: 1px solid black;
   border-radius: 50%; 
-} */
+}  */
 
 
 input {
@@ -77,4 +77,9 @@ input[type="text"] {
   color: white;
   font-family: 'Georgia';
   cursor: pointer;
+}
+
+.audio-player-container {
+ width: 10%; 
+
 }

@@ -2,12 +2,12 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
 function AlbumDetails(props) {
-  let { name } = useParams();
+  let { id } = useParams();
 
   const [album, setAlbum] = useState(null);
 
   useEffect(() => {
-    let selectedAlbum = props.albums.find((album) => album.name === name);
+    let selectedAlbum = props.albums.find((album) => album.name === id);
 
     setAlbum(selectedAlbum);
   }, []);
@@ -16,10 +16,10 @@ function AlbumDetails(props) {
     <div className="detail">
       <h1>{album.artist.name}</h1>
       <h2>{album.title}</h2>
-      <h2>{album.releasedate}</h2>
+      <h2>{album.manufacturer}</h2>
     </div>
   ) : (
-    <h1> album not found</h1>
+    <h1> ship not found</h1>
   );
 }
 

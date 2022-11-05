@@ -35,8 +35,8 @@ export default function Artist() {
         {chart.map((data) => (
           <div key={data.name} className="card">
             <h3>Artist: {data.name} </h3>
-            <div className="artistImage">
-              <img src={data.picture_medium} />
+            <div>
+              <img className="artistImage" src={data.picture_medium} />
             </div>
           </div>
         ))}

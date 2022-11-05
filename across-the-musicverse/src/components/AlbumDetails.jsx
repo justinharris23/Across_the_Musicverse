@@ -7,7 +7,7 @@ function AlbumDetails(props) {
   const [album, setAlbum] = useState(null);
 
   useEffect(() => {
-    let selectedAlbum = props.albums.find((album) => album.name === id);
+    let selectedAlbum = props.albums.find((album) => album.id === id);
 
     setAlbum(selectedAlbum);
   }, []);

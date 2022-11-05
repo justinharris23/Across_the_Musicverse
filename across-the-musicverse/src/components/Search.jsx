@@ -53,13 +53,19 @@ function Search() {
           />
         </button>
       </form>
-      <div className="grid">
+      <div className="searchResults">
         {search?.map((data) => (
-          <div key={data.name} className="card">
+          <div key={data.name} className="searchCard">
             <h3>Artist: {data.artist.name} </h3>
+            <h3>Album: {data.album.title} </h3>
             <h3>Song: {data.title} </h3>
-            <div className="artistImage">
-              <img src={data.artist.picture_medium} />
+            <div>
+              <img
+                className="searchImage"
+                src={data.album.cover_medium}
+                width="150px"
+                height="150px"
+              />
             </div>
           </div>
         ))}

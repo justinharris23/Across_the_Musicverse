@@ -11,7 +11,7 @@ export default function Album() {
   let { i } = useParams();
 
   const showAlbum = (album, i) => {
-    navigate(`${album.name}`);
+    navigate(`${album.id}`);
   };
 
   //we need to call an axios function

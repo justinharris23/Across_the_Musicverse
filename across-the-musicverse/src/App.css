@@ -52,25 +52,26 @@ input {
   font-family: Nunito;
   padding: 0;
   margin: 0;
-  border: 0;
+  border: 1px solid black;
   background-color: transparent;
 }
 
 input[type="text"] {
-  width: 80%;
+  width: 60%;
   height: 96px;
   font-size: 60px;
   line-height: 1;
   margin-right: 10px;
 }
 
-/* button {
+button {
   position: relative;
-  display: block;
+  /* display: block; */
   width: 84px;
   height: 96px;
   cursor: pointer;
-} */
+  margin-bottom: 20px;
+}
 
 .card {
   padding: 1em;
@@ -89,4 +90,24 @@ input[type="text"] {
 .audio-player-container {
  width: 10%; 
 
+}
+
+.searchResults {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 10px;
+}
+
+.searchCard {
+  padding: 1em;
+  width: 18em;
+  height: 26em;
+  background-color: rgb(36, 47, 85);
+  border-radius: 0.5em;
+  margin: 1em;
+  justify-content: space-around;
+  box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.527);
+  color: white;
+  font-family: 'Georgia';
+  cursor: pointer;
 }

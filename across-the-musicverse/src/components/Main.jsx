@@ -31,7 +31,7 @@ export default function Main() {
         <Route exact path="/search" element={<Search />} />
         <Route
           exact
-          path="/artist/:id"
+          path="/album/:id"
           element={<AlbumDetails album={album} />}
         />
       </Routes>

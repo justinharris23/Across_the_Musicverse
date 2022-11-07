@@ -9,7 +9,6 @@ export default function Artist() {
   useEffect(() => {
     const getChart = async () => {
       const response = await axios.get("https://api.deezer.com/chart");
-      console.log(response.data.artists.data);
 
       //we need to set state of our data
       setChart(response.data.artists.data);
@@ -19,8 +18,6 @@ export default function Artist() {
   }, []);
 
   //we need to see the data
-  console.log(chart);
-  // console.log(artist[0].title);
 
   //let's also make a guard operator
   //so if data takes a few seconds/
@@ -33,10 +30,11 @@ export default function Artist() {
     return (
       <div className="grid">
         {chart.map((data) => (
-          <div key={data.name} className="card">
+          <div key={data.name} className="artistCard">
             <h3>{data.name} </h3>
             <div>
-              <img className="artistImage" src={data.picture_medium} />
+              <img className="artistImage" src={data.picture_medium}    width="220px"
+                height="220px" />
             </div>
           </div>
         ))}

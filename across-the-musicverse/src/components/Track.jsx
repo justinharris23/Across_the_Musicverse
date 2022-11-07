@@ -12,7 +12,6 @@ export default function Track() {
   useEffect(() => {
     const getChart = async () => {
       const response = await axios.get("https://api.deezer.com/chart");
-      console.log(response.data);
 
       //we need to set state of our data
       setChart(response.data.tracks.data);
@@ -22,7 +21,6 @@ export default function Track() {
   }, []);
 
   //we need to see the data
-  console.log(chart);
   // console.log(artist[0].title);
 
   //let's also make a guard operator
@@ -36,10 +34,11 @@ export default function Track() {
     return (
       <div className="grid">
         {chart.map((data) => (
-          <div key={data.name} className="card">
+          <div key={data.name} className="trackCard">
+            <div className="trackData">
             <h3>Song: {data.title} </h3>
             <h3>Preview Song:</h3>
-
+</div>
             {/* Audio Player will allow tracks playble on press to the play button  */}
             <div id="audio-player-container">
               <ReactAudioPlayer src={data.preview} onPlay controls muted />
@@ -49,8 +48,8 @@ export default function Track() {
               <img
                 className="trackImage"
                 src={data.artist.picture_medium}
-                width="200px"
-                height="200px"
+                width="180px"
+                height="180px"
               />
             </div>
           </div>

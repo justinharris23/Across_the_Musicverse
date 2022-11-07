@@ -14,7 +14,6 @@ export default function Main() {
   useEffect(() => {
     const getChart = async () => {
       const response = await axios.get("https://api.deezer.com/chart");
-      console.log(response.data.albums.data);
       setChart(response.data.albums.data);
     };
 

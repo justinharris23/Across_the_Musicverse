@@ -18,7 +18,6 @@ export default function Album() {
   useEffect(() => {
     const getChart = async () => {
       const response = await axios.get("https://api.deezer.com/chart");
-      console.log(response.data);
 
       //we need to set state of our data
       setChart(response.data.albums.data);
@@ -28,7 +27,6 @@ export default function Album() {
   }, []);
 
   //we need to see the data
-  console.log(chart);
   // console.log(artist[0].title);
 
   //let's also make a guard operator
@@ -42,11 +40,15 @@ export default function Album() {
     return (
       <div className="topAlbum">
         {chart.map((data) => (
-          <div key={data.name} className="card" onClick={() => showAlbum(data)}>
+          <div
+            key={data.name}
+            className="albumCard"
+            onClick={() => showAlbum(data)}
+          >
             <h3>Album: {data.title} </h3>
             <h3>Artist: {data.artist.name} </h3>
             <div className="albumImage">
-              <img src={data.cover_medium} />
+              <img src={data.cover_medium} width="200px" height="200px" />
             </div>
           </div>
         ))}

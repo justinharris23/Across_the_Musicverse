@@ -5,42 +5,31 @@ import axios from "axios";
 function AlbumDetails({ chart }) {
   let { id } = useParams();
 
-  const [album, setChart] = useState(null);
+  const [album, setAlbum] = useState(chart.find(album => album.id == id));
+  console.log(chart.find((album) => album.id == id));
+  
 
-  useEffect(() => {
-    const getChart = async () => {
-      const response = await axios.get("https://api.deezer.com/chart");
-      console.log(response.data);
-
-      //we need to set state of our data
-      setChart(response.data.tracks.data);
-    };
-
-    getChart();
-  }, []);
-
-  ///Initial Way
+  //Initial Way
   // useEffect(() => {
   //   console.log(chart);
-  //   let selectedAlbum = chart?.find((album) => album.id === id);
-  // console.log(selectedAlbum);
-  // setAlbum(selectedAlbum);
+  //   let selectedAlbum = chart.find((album) => album.id === id);
 
-  //   setAlbum(chart[0]);
 
-  //   console.log(album);
+  //   setAlbum(selectedAlbum);
+
+  //   // setAlbum(chart[3]);
+
   // }, []);
-  ////////
+  //////
 
   return album ? (
     <div className="detail">
-      <h1>{album.data.data.title}</h1>
-      <h2>{album.title}</h2>
+      <h1>{album.title}</h1>
       <img
         className="detailsImage"
         src={album.cover_big}
-        width="250px"
-        height="250px"
+        width="350px"
+        height="350px"
       />
     </div>
   ) : (

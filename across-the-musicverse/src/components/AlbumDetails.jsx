@@ -1,25 +1,40 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import axios from "axios";
 
 function AlbumDetails({ chart }) {
   let { id } = useParams();
 
-  const [album, setAlbum] = useState(null);
+  const [album, setChart] = useState(null);
 
   useEffect(() => {
-    console.log(chart);
-    // let selectedAlbum = chart?.find((album) => album.id === id);
-    // console.log(selectedAlbum);
-    // setAlbum(selectedAlbum);
+    const getChart = async () => {
+      const response = await axios.get("https://api.deezer.com/chart");
+      console.log(response.data);
 
-    setAlbum(chart[0]);
+      //we need to set state of our data
+      setChart(response.data.tracks.data);
+    };
 
-    console.log(album);
+    getChart();
   }, []);
+
+  ///Initial Way
+  // useEffect(() => {
+  //   console.log(chart);
+  //   let selectedAlbum = chart?.find((album) => album.id === id);
+  // console.log(selectedAlbum);
+  // setAlbum(selectedAlbum);
+
+  //   setAlbum(chart[0]);
+
+  //   console.log(album);
+  // }, []);
+  ////////
 
   return album ? (
     <div className="detail">
-      <h1>{album.artist.name}</h1>
+      <h1>{album.data.data.title}</h1>
       <h2>{album.title}</h2>
       <img
         className="detailsImage"

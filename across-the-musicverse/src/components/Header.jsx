@@ -6,11 +6,13 @@ export default function Header() {
     <div>
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
       <link
-        href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap"
         rel="stylesheet"
       />
-      <h2 className="Main">Across the Musicverse</h2>
+
+      <h1 className="Main">Across the Musicverse</h1>
       <img src={HeaderPicture} width="100%" height="auto" />
       <Nav />
     </div>

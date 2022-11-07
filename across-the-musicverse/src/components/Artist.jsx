@@ -34,7 +34,7 @@ export default function Artist() {
       <div className="grid">
         {chart.map((data) => (
           <div key={data.name} className="card">
-            <h3>Artist: {data.name} </h3>
+            <h3>{data.name} </h3>
             <div>
               <img className="artistImage" src={data.picture_medium} />
             </div>

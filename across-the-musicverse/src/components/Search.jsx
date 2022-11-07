@@ -44,13 +44,8 @@ function Search() {
           value={formState.subject}
           onChange={handleChange}
         />
-        <button className="searchButton">
-          <input
-            type="button"
-            onClick={getSearch}
-            id="searchButton"
-            value="Search"
-          ></input>
+        <button className="searchButton" onClick={getSearch} value>
+          <input type="button" id="searchButton" value="Search"></input>
         </button>
       </form>
       <div className="searchResults">

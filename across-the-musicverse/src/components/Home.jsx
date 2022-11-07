@@ -10,15 +10,15 @@ export default function Home() {
       {/* <h3>Welcome to my home page</h3> */}
       <div>
         <div className="topMusic">
-          <h4>
+          <h4 className="mostStreamed">
             Most Streamed Artists
             <Artist />
           </h4>
-          <h4>
+          <h4 className="mostStreamed">
             Most Streamed Albums
             <Album />
           </h4>
-          <h4>
+          <h4 className="mostStreamed">
             Most Streamed Tracks
             <Track />
           </h4>

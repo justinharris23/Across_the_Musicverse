@@ -49,8 +49,8 @@ function Search() {
             type="button"
             onClick={getSearch}
             id="searchButton"
-            value="Click here"
-          />
+            value="Search"
+          ></input>
         </button>
       </form>
       <div className="searchResults">

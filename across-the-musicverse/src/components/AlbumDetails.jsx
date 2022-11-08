@@ -24,7 +24,9 @@ function AlbumDetails({ chart }) {
 
   return album ? (
     <div className="detail">
-      <h1>{album.title}</h1>
+      <h1>Artist: {album.artist.name}</h1>
+      <h1>Album: {album.title}</h1>
+      <h1>Track Listing: </h1>
       <img
         className="detailsImage"
         src={album.cover_big}

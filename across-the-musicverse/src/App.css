@@ -79,13 +79,13 @@ input[type="text"] {
 
 .searchButton {
   display: inline-block;
-  background-color: #7b38d8;
+  background-color: #f68c85;
   border-radius: 10px;
   border: 4px double #cccccc;
   color: #eeeeee;
   text-align: center;
   font-size: 28px;
-  padding: 20px;
+  padding: 10px;
   width: 200px;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
@@ -97,11 +97,13 @@ input[type="text"] {
 
 #searchButton {
   font-size: 30px;
-  color: white
+  color: white;
+  border: none;
+  align-content: center;
 }
 
 .searchButton:hover {
-  background-color: #a172e2;
+  background-color: #8aace9;
 }
 
 .card {
@@ -150,7 +152,7 @@ input[type="text"] {
 .trackCard {
   padding: 1em;
   width: 20em;
-  height: 22em;
+  height: 24em;
   background-color: rgb(66 72 120);
   border-radius: 0.5em;
   margin: 1em;
@@ -195,8 +197,8 @@ input[type="text"] {
   bottom: 0;
   width: 100%;
   height: 2.5rem;
-  background-color: #BFC1C0;
   margin: 0;
+  background: #f7f9f8;
 }
 
 .headerImage {

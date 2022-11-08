@@ -27,9 +27,9 @@ function AlbumDetails({ chart }) {
   ////
 
   return album && track ? (
-    <div className="albumDetail">
-      <h1>Artist: {album.artist.name}</h1>
-      <h1>Album: {album.title}</h1>
+    <div className="detail">
+      <h1 className="artistDetail">Artist: {album.artist.name}</h1>
+      <h1 className ="albumDetail">Album: {album.title}</h1>
  
       <img
         className="detailsImage"
@@ -39,8 +39,8 @@ function AlbumDetails({ chart }) {
       />
 <div className="trackList"><h2>Track List</h2></div> 
 {track.data.map((x) => (
-  <div key={x.title} className="trackList">
-    <h2>{x.title}</h2>
+  <div key={x.title}>
+    <h2 className="trackDetail">{x.title}</h2>
   </div>
 ))}
 

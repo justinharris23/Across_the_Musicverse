@@ -52,7 +52,8 @@ h4 {
 
 .mostStreamed {
   color: black;
-  font-size: 30px bold;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .artistImage {
@@ -136,7 +137,7 @@ input[type="text"] {
 
 .artistCard {
   padding: 1em;
-  width: 16em;
+  width: 15em;
   height: 18em;
   background-color: rgb(66 72 120);
   border-radius: 0.5em;
@@ -152,8 +153,8 @@ input[type="text"] {
 
 .albumCard {
   padding: 1em;
-  width: 18em;
-  height: 21em;
+  width: 15em;
+  height: 20.5em;
   background-color: rgb(66 72 120);
   border-radius: 0.5em;
   margin: 1em;
@@ -166,12 +167,12 @@ input[type="text"] {
 
 .trackCard {
   padding: 1em;
-  width: 20em;
-  height: 22em;
+  width: 18.5em;
+  height: 21em;
   background-color: rgb(66 72 120);
   border-radius: 0.5em;
   margin: 1em;
-  justify-content: space-around;
+  justify-content: center;
   box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.527);
   color: white;
   font-family: 'Georgia';
@@ -262,4 +263,26 @@ a:hover {
 .searchName {
   margin: 2px;
   margin-bottom: 8px;
+}
+
+.detailsImage {
+  border-radius: 2%;
+}
+
+.detail {
+  display: grid;
+  padding-left: 70px;
+}
+
+.artistDetail,
+.albumDetail,
+.trackDetail,
+.trackList {
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+}
+
+.trackDetail {
+  margin-bottom: 10px;
 }

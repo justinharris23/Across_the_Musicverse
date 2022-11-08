@@ -48,7 +48,7 @@ export default function Album() {
             <h3 className="musicName" >Album: {data.title} </h3>
             <h3 className="musicName">Artist: {data.artist.name} </h3>
             <div>
-              <img className="albumImage" src={data.cover_medium} width="200px" height="200px" />
+              <img className="albumImage" src={data.cover_medium} width="210px" height="210px" />
             </div>
           </div>
         ))}

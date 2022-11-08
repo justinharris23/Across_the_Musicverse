@@ -15,6 +15,7 @@ export default function Track() {
 
       //we need to set state of our data
       setChart(response.data.tracks.data);
+     
     };
 
     getChart();

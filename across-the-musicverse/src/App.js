@@ -18,7 +18,6 @@ function App() {
       <div>
         <Header />
         <Main />
-        {/* <Search /> */}
         <Footer />
       </div>
     </div>

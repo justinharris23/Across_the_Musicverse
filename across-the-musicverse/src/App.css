@@ -216,6 +216,7 @@ input[type="text"] {
   margin: 0;
   background-color: rgb(66 72 120);
   color: #f7f9f8;
+  margin-top: 10px;
 }
 
 .footerText {
@@ -269,10 +270,10 @@ a:hover {
   border-radius: 2%;
 }
 
-.detail {
+/* .detail {
   display: grid;
   padding-left: 70px;
-}
+} */
 
 .artistDetail,
 .albumDetail,

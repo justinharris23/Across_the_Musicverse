@@ -7,7 +7,7 @@ function AlbumDetails({ chart }) {
   let { id } = useParams();
 
   const [album, setAlbum] = useState(chart.find(album => album.id == id));
-  console.log(chart.find((album) => album.id == id));
+  // console.log(chart.find((album) => album.id == id));
 
   ///
   const [track, setTrack] = useState('')
@@ -26,7 +26,7 @@ function AlbumDetails({ chart }) {
 
   ////
 
-  return album ? (
+  return album && track ? (
     <div className="detail">
       <h1>Artist: {album.artist.name}</h1>
       <h1>Album: {album.title}</h1>
@@ -37,12 +37,12 @@ function AlbumDetails({ chart }) {
         width="350px"
         height="350px"
       />
-
-{/* {track.data.map((x) => (
+<div><h2 className="trackList">Track List</h2></div> 
+{track.data.map((x) => (
   <div key={x.title} className="trackList">
     <h2>{x.title}</h2>
   </div>
-))} */}
+))}
 
   
     </div>

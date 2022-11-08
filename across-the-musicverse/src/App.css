@@ -17,8 +17,15 @@ h1 {
 h2 {
   font-family: 'Nunito', sans-serif;
   font-size: 30px;
+  text-decoration: underline;
 
 }
+
+/* .trackList {
+  font-weight: bold;
+  font-size: 30px;
+
+} */
 
 h3 {
   font-family: 'Nunito', sans-serif;

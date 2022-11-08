@@ -37,7 +37,7 @@ function AlbumDetails({ chart }) {
         width="350px"
         height="350px"
       />
-<div><h2 className="trackList">Track List</h2></div> 
+<div className="trackList"><h2>Track List</h2></div> 
 {track.data.map((x) => (
   <div key={x.title} className="trackList">
     <h2>{x.title}</h2>

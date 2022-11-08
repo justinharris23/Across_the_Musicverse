@@ -2,6 +2,8 @@
   text-align: center;
   background: #f7f9f8;
   font-family: 'Nunito', sans-serif;
+
+
 }
 
 .Main {
@@ -188,7 +190,7 @@ input[type="text"] {
   padding-bottom: 1em;
   width: 18em;
   height: 30em;
-  background-color: rgb(36, 47, 85);
+  background-color: rgb(66 72 120);
   border-radius: 0.5em;
   margin: 1em;
   justify-content: space-around;

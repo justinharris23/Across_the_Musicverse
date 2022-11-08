@@ -28,13 +28,13 @@ export default function Artist() {
   } else {
     //we have to map all 25 of our songs here in this div. If we don't have an artist we'll get Loading Please Wait
     return (
-      <div className="grid">
+      <div className="topArtist">
         {chart.map((data) => (
           <div key={data.name} className="artistCard">
-            <h3>{data.name} </h3>
+            <h3 className="musicName"> {data.name} </h3>
             <div>
-              <img className="artistImage" src={data.picture_medium}    width="220px"
-                height="220px" />
+              <img className="artistImage" src={data.picture_medium}    width="215px"
+                height="215px" />
             </div>
           </div>
         ))}

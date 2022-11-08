@@ -50,9 +50,9 @@ function Search() {
       <div className="searchResults">
         {search?.map((data) => (
           <div key={data.name} className="searchCard">
-            <h4>Artist: {data.artist.name} </h4>
-            <h4>Album: {data.album.title} </h4>
-            <h4>Song: {data.title} </h4>
+            <h4 className="searchName">Artist: {data.artist.name} </h4>
+            <h4 className="searchName">Album: {data.album.title} </h4>
+            <h4 className="searchName">Song: {data.title} </h4>
             <div>
               <img
                 className="searchImage"

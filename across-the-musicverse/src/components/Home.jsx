@@ -2,10 +2,10 @@ import React from "react";
 import Artist from "./Artist";
 import Album from "./Album";
 import Track from "./Track";
-import HeaderPicture from "./assets/music-header-int.jpg";
 
 export default function Home() {
   return (
+    
     <div className="home">
       {/* <h3>Welcome to my home page</h3> */}
       <div>

@@ -37,8 +37,8 @@ export default function Track() {
         {chart.map((data) => (
           <div key={data.name} className="trackCard">
             <div className="trackData">
-            <h3>Song: {data.title} </h3>
-            <h3>Preview Song:</h3>
+            <h3 className="musicName">Song: {data.title} </h3>
+            <h3 className="musicName">Preview Song:</h3>
 </div>
             {/* Audio Player will allow tracks playble on press to the play button  */}
             <div id="audio-player-container">

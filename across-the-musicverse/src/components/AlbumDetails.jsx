@@ -27,7 +27,7 @@ function AlbumDetails({ chart }) {
   ////
 
   return album && track ? (
-    <div className="detail">
+    <div className="albumDetail">
       <h1>Artist: {album.artist.name}</h1>
       <h1>Album: {album.title}</h1>
  

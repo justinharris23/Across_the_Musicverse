@@ -2,13 +2,13 @@
   text-align: center;
   background: #f7f9f8;
   font-family: 'Nunito', sans-serif;
-
-
 }
 
 .Main {
   margin: 0%;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
+  background-color: rgb(66 72 120);
+  color: #f7f9f8;
 }
 
 h1 {
@@ -19,15 +19,11 @@ h1 {
 h2 {
   font-family: 'Nunito', sans-serif;
   font-size: 30px;
-
-
 }
 
 .trackList {
   font-weight: bold;
   font-size: 30px;
-
-
 }
 
 h3 {
@@ -45,28 +41,35 @@ h4 {
 .nav {
   display: flex;
   justify-content: space-evenly;
+  margin: 0;
 }
 
 
 .topMusic {
   display: flex;
-  justify-content: space-evenly;
-}
-
-
-.artistImage {
-  border: 2px solid black;
-  border-radius: 50%;
+  justify-content: center;
 }
 
 .mostStreamed {
   color: black;
-  font-size: 15px bold;
+  font-size: 30px bold;
+}
+
+.artistImage {
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.albumImage {
+  border: 1px solid black;
+  border-radius: 3%;
+  align-content: center;
 }
 
 .trackImage {
   border: 1px solid black;
-  border-radius: 50%;
+  border-radius: 3%;
+  margin-top: 10px;
 }
 
 
@@ -77,12 +80,13 @@ input {
   margin: 0px;
   border: 1px solid black;
   background-color: transparent;
+  padding-left: 10px;
 }
 
 input[type="text"] {
-  width: 60%;
+  width: 55%;
   height: 96px;
-  font-size: 50px;
+  font-size: 41px;
   line-height: 1;
   margin-right: 10px;
 }
@@ -132,8 +136,8 @@ input[type="text"] {
 
 .artistCard {
   padding: 1em;
-  width: 18em;
-  height: 20em;
+  width: 16em;
+  height: 18em;
   background-color: rgb(66 72 120);
   border-radius: 0.5em;
   margin: 1em;
@@ -142,13 +146,14 @@ input[type="text"] {
   color: white;
   font-family: 'Georgia';
   cursor: pointer;
+  border-right: 1px solid;
 }
 
 
 .albumCard {
   padding: 1em;
   width: 18em;
-  height: 24em;
+  height: 21em;
   background-color: rgb(66 72 120);
   border-radius: 0.5em;
   margin: 1em;
@@ -162,7 +167,7 @@ input[type="text"] {
 .trackCard {
   padding: 1em;
   width: 20em;
-  height: 24em;
+  height: 22em;
   background-color: rgb(66 72 120);
   border-radius: 0.5em;
   margin: 1em;
@@ -189,7 +194,7 @@ input[type="text"] {
   padding: 1em;
   padding-bottom: 1em;
   width: 18em;
-  height: 30em;
+  height: 28em;
   background-color: rgb(66 72 120);
   border-radius: 0.5em;
   margin: 1em;
@@ -206,13 +211,55 @@ input[type="text"] {
   position: bottom;
   bottom: 0;
   width: 100%;
-  height: 2.5rem;
+  height: 1.5rem;
   margin: 0;
-  background: #f7f9f8;
+  background-color: rgb(66 72 120);
+  color: #f7f9f8;
+}
+
+.footerText {
+  margin: 0;
+  font-size: 15px;
 }
 
 .headerImage {
   border-radius: 0;
   max-width: auto;
   height: 0;
+}
+
+.searchLink,
+.homeLink {
+  margin: 10px;
+  text-decoration: none;
+  color: #f68c85;
+  margin-bottom: 2px;
+
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  text-shadow: .5px .5px .5px rgb(66 72 120);
+}
+
+
+a:hover {
+  text-decoration: none;
+}
+
+.topAlbum {
+  border-left: 2px solid rgb(66 72 120);
+  border-right: 2px solid rgb(66 72 120);
+}
+
+.musicName {
+  margin: 5px;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.searchName {
+  margin: 2px;
+  margin-bottom: 8px;
 }

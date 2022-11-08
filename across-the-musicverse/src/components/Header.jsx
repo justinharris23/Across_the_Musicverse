@@ -11,9 +11,9 @@ export default function Header() {
         href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap"
         rel="stylesheet"
       />
-
+<img src={HeaderPicture} width="100%" height="auto" />
       <h1 className="Main">Across the Musicverse</h1>
-      <img src={HeaderPicture} width="100%" height="auto" />
+      
       <Nav />
     </div>
   );

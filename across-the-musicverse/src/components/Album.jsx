@@ -45,10 +45,10 @@ export default function Album() {
             className="albumCard"
             onClick={() => showAlbum(data)}
           >
-            <h3>Album: {data.title} </h3>
-            <h3>Artist: {data.artist.name} </h3>
-            <div className="albumImage">
-              <img src={data.cover_medium} width="200px" height="200px" />
+            <h3 className="musicName" >Album: {data.title} </h3>
+            <h3 className="musicName">Artist: {data.artist.name} </h3>
+            <div>
+              <img className="albumImage" src={data.cover_medium} width="200px" height="200px" />
             </div>
           </div>
         ))}

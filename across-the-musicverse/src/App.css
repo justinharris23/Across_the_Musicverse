@@ -328,4 +328,5 @@ a:hover {
   display: flex;
   max-width: 600px;
   justify-content: flex-end;
+  margin-bottom: 5px;
 }

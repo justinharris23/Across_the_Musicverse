@@ -7,6 +7,7 @@
 .Main {
   margin: 0%;
   margin-bottom: 5px;
+  margin-top: -5px;
   background-color: rgb(66 72 120);
   color: #f7f9f8;
 }
@@ -138,7 +139,8 @@ input[type="text"] {
 .artistCard {
   padding: 1em;
   width: 15em;
-  height: 18em;
+  /* height: 18em; */
+  max-height: fit-content;
   background-color: rgb(66 72 120);
   border-radius: 0.5em;
   margin: 1em;
@@ -154,7 +156,9 @@ input[type="text"] {
 .albumCard {
   padding: 1em;
   width: 15em;
-  height: 20.5em;
+  /* height: 20.5em; */
+
+  max-height: fit-content;
   background-color: rgb(66 72 120);
   border-radius: 0.5em;
   margin: 1em;
@@ -168,7 +172,8 @@ input[type="text"] {
 .trackCard {
   padding: 1em;
   width: 18.5em;
-  height: 21em;
+  /* height: 21em; */
+  max-height: fit-content;
   background-color: rgb(66 72 120);
   border-radius: 0.5em;
   margin: 1em;
@@ -195,7 +200,9 @@ input[type="text"] {
   padding: 1em;
   padding-bottom: 1em;
   width: 18em;
-  height: 28em;
+  /* height: 28em; */
+  /* max-width: fit-content; */
+  max-height: fit-content;
   background-color: rgb(66 72 120);
   border-radius: 0.5em;
   margin: 1em;
@@ -288,4 +295,37 @@ a:hover {
 
 .trackDetail {
   margin-bottom: 10px;
+}
+
+.albumDetail {
+  padding-bottom: 10px;
+}
+
+.searchImage {
+  border-radius: 2%;
+}
+
+.trackContainer {
+  display: grid;
+  justify-content: center;
+}
+
+.previewContainer {
+  display: grid;
+  grid-template-columns: auto auto;
+  flex-direction: row;
+  gap: 2em;
+
+}
+
+.trackDetail {
+  display: flex;
+  max-width: max-content;
+  align-content: right;
+}
+
+.trackPreview {
+  display: flex;
+  max-width: 600px;
+  justify-content: flex-end;
 }

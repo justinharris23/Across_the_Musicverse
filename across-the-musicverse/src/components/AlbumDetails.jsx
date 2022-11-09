@@ -1,15 +1,13 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
-import Album from "./Album";
+import ReactAudioPlayer from "react-audio-player";
 
 function AlbumDetails({ chart }) {
   let { id } = useParams();
 
   const [album, setAlbum] = useState(chart.find(album => album.id == id));
-  // console.log(chart.find((album) => album.id == id));
 
-  ///
   const [track, setTrack] = useState('')
   useEffect(() => {
  
@@ -17,7 +15,7 @@ function AlbumDetails({ chart }) {
   const response = await axios.get(album.tracklist)
 
     setTrack(response.data)
-  //  console.log (track.data[0].title)
+console.log (track)
     
   
    }
@@ -34,15 +32,22 @@ function AlbumDetails({ chart }) {
       <img
         className="detailsImage"
         src={album.cover_big}
-        width="350px"
-        height="350px"
+        width="400px"
+        height="400px"
       />
 <div className="trackList"><h2>Track List</h2></div> 
+
+<div className="trackContainer">
 {track.data.map((x) => (
-  <div key={x.title}>
-    <h2 className="trackDetail">{x.title}</h2>
+ 
+ <div key={x.title} className="previewContainer">
+    <h2 className="trackDetail">{x.title} </h2>
+    
+  <div className="trackPreview">
+    <ReactAudioPlayer src={x.preview} onPlay controls muted />  </div>
   </div>
 ))}
+</div>
 
   
     </div>

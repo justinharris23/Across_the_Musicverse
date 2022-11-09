@@ -57,8 +57,8 @@ function Search() {
               <img
                 className="searchImage"
                 src={data.album.cover_medium}
-                width="130px"
-                height="130px"
+                width="150px"
+                height="150px"
               />
             </div>
           </div>

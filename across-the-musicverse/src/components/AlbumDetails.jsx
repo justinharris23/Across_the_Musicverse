@@ -15,7 +15,7 @@ function AlbumDetails({ chart }) {
   const response = await axios.get(album.tracklist)
 
     setTrack(response.data)
-console.log (track)
+//console.log (track)
     
   
    }

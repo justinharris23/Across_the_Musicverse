@@ -1,8 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import ReactAudioPlayer from "react-audio-player";
-// import ReactJkMusicPlayer from "react-jinke-music-player";
-// import "react-jinke-music-player/assets/index.css";
+
 
 export default function Track() {
   //we need to create a state for our data
@@ -49,8 +48,8 @@ export default function Track() {
               <img
                 className="trackImage"
                 src={data.artist.picture_medium}
-                width="180px"
-                height="180px"
+                width="175px"
+                height="175px"
               />
             </div>
           </div>

@@ -152,12 +152,16 @@ input[type="text"] {
   border-right: 1px solid;
 }
 
+.artistCard:hover {
+  scale: 105%;
+  transition: .5s ease;
+}
+
 
 .albumCard {
   padding: 1em;
   width: 15em;
   /* height: 20.5em; */
-
   max-height: fit-content;
   background-color: rgb(66 72 120);
   border-radius: 0.5em;
@@ -167,6 +171,13 @@ input[type="text"] {
   color: white;
   font-family: 'Georgia';
   cursor: pointer;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.albumCard:hover {
+  scale: 105%;
+  transition: .5s ease;
 }
 
 .trackCard {
@@ -182,6 +193,11 @@ input[type="text"] {
   color: white;
   font-family: 'Georgia';
   cursor: pointer;
+}
+
+.trackCard:hover {
+  scale: 105%;
+  transition: .5s ease;
 }
 
 .audio-player-container {
@@ -211,6 +227,11 @@ input[type="text"] {
   color: white;
   font-family: 'Georgia';
   cursor: pointer;
+}
+
+.searchCard:hover {
+  scale: 105%;
+  transition: .5s ease;
 }
 
 .footer {
